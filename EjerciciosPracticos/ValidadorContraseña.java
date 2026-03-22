@@ -1,3 +1,4 @@
+package EjerciciosPracticos;
 import java.util.Scanner;
 
 public class ValidadorContraseña {
