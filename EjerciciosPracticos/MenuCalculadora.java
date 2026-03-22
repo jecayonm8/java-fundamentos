@@ -3,7 +3,7 @@ package EjerciciosPracticos;
 import java.util.Scanner;
 
 // ------------------------------------------------------------------
-    //Este programa debe mostrar un menú al usuario con las siguientes opciones y requisitos:
+    //Este programa debe mostrar un menú al usuario con las siguientes opciones y/o requisitos:
     //- Calcular área de un círculo (π × radio²)
     //- Calcular área de un rectángulo (base × altura)
     //- Calcular área de un triángulo ( base × altura x 0.5) o ((base × altura) / 2)

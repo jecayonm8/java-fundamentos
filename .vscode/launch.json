@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CalculadoraAvanzada",
+            "request": "launch",
+            "mainClass": "EjerciciosPracticos.CalculadoraAvanzada",
+            "projectName": "java-fundamentos_61f453b5"
+        },
+        {
+            "type": "java",
+            "name": "MenuCalculadora",
+            "request": "launch",
+            "mainClass": "EjerciciosPracticos.MenuCalculadora",
+            "projectName": "java-fundamentos_61f453b5"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

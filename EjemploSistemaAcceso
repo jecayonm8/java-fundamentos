@@ -1,0 +1,91 @@
+//Este Ejemplo practico pertenece al tema de Resoluciion de problemas y estructuras de control.
+import java.util.Scanner;
+
+public class SistemaAcceso {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Configuración del sistema
+        final String USUARIO_CORRECTO = "adminjecm";
+        final String CONTRASENA_CORRECTA = "estaesmicontraseñaadminjecm";
+        final int MAX_INTENTOS = 3;
+
+        boolean accesoConcedido = false;
+        int intentosRealizados = 0;
+
+        System.out.println("=== SISTEMA DE ACCESO ===");
+
+        // Bucle principal de autenticación
+        while (intentosRealizados < MAX_INTENTOS && !accesoConcedido) {
+            System.out.println("Intento " + (intentosRealizados + 1) + " de " + MAX_INTENTOS);
+
+            // Solicitar credenciales
+            System.out.print("Usuario: ");
+            String usuario = scanner.nextLine();
+
+            System.out.print("Contraseña: ");
+            String contrasena = scanner.nextLine();
+
+            // Validar credenciales
+            if (usuario.equals(USUARIO_CORRECTO) && contrasena.equals(CONTRASENA_CORRECTA)) {
+                accesoConcedido = true;
+                System.out.println("¡Acceso concedido! Bienvenido al sistema.");
+            } else {
+                intentosRealizados++;
+                int intentosRestantes = MAX_INTENTOS - intentosRealizados;
+
+                if (intentosRestantes > 0) {
+                    System.out.println("Credenciales incorrectas. Intentalo de nuevo ;).");
+                    System.out.println("Intentos restantes: " + intentosRestantes);
+                    System.out.println();
+                }
+            }
+        }
+
+        // Verificar, en caso de que se agotaran los intentos de un usuario.
+        if (!accesoConcedido) {
+            System.out.println("ACCESO DENEGADO: Se agotaron los intentos :( ");
+            System.out.println("Su sesión ha sido bloqueada.");
+        } else {
+            // Menú principal del sistema
+            mostrarMenuPrincipal(scanner);
+        }
+
+        scanner.close();
+    }
+
+    public static void mostrarMenuPrincipal(Scanner scanner) {
+        boolean mantenerSesion = true;
+
+        while (mantenerSesion) {
+            System.out.println("\n=== MENÚ PRINCIPAL ===");
+            System.out.println("1. Ver perfil");
+            System.out.println("2. Configuración");
+            System.out.println("3. Reportes");
+            System.out.println("4. Cerrar sesión");
+            System.out.print("Seleccione una opción: ");
+
+            int opcion = scanner.nextInt();
+            scanner.nextLine(); // Limpiar buffer
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("Mostrando perfil del usuario...");
+                    break;
+                case 2:
+                    System.out.println("Accediendo a configuración...");
+                    break;
+                case 3:
+                    System.out.println("Generando reportes...");
+                    break;
+                case 4:
+                    System.out.println("Cerrando sesión... ¡Hasta pronto!");
+                    mantenerSesion = false;
+                    break;
+                default:
+                    System.out.println("Opción no válida. Intente nuevamente.");
+            }
+        }
+    }
+}
