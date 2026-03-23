@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BibliotecaTest",
+            "request": "launch",
+            "mainClass": "JavaJuniorDeveloper.ProyectosyEjerciciosPOO.ProyectoSistemaLibros.BibliotecaTest",
+            "projectName": "java-fundamentos_61f453b5"
+        },
+        {
+            "type": "java",
+            "name": "EjClaseBasicaEncasulaPOO",
+            "request": "launch",
+            "mainClass": "JavaJuniorDeveloper.Ejemplos.EjClaseBasicaEncasulaPOO",
+            "projectName": "java-fundamentos_61f453b5"
+        },
+        {
+            "type": "java",
             "name": "ProyectoSistRegistroEstudiante",
             "request": "launch",
             "mainClass": "EjerciciosyProyectosPracticos.ProyectoSistRegistroEstudiante",

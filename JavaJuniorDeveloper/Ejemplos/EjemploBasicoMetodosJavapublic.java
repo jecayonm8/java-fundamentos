@@ -1,4 +1,4 @@
-package Ejemplos;
+package JavaJuniorDeveloper.Ejemplos;
 
 public class EjemploBasicoMetodosJavapublic {
     
@@ -28,5 +28,5 @@ public class EjemploBasicoMetodosJavapublic {
         double area = calcularArea(5.0);
         System.out.printf("El área es: %.2f%n", area);
     }
-    
+
 }

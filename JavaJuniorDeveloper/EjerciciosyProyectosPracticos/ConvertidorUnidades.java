@@ -1,4 +1,4 @@
-package EjerciciosyProyectosPracticos;
+package JavaJuniorDeveloper.EjerciciosyProyectosPracticos;
 import java.util.*;
 
 public class ConvertidorUnidades {

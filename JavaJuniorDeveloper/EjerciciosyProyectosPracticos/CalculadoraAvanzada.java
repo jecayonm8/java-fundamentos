@@ -1,4 +1,4 @@
-package EjerciciosyProyectosPracticos;
+package JavaJuniorDeveloper.EjerciciosyProyectosPracticos;
 //CALCULADORA FUNCIONAL CON TODAS LAS OPERACIONES Y MANEJO ERRORES.
 //Enunciado: Desarrollar una calculadora con múltiples operaciones y manejo de errores
 //Objetivo: Aplicar estructuras de control complejas y depuración de errores.
