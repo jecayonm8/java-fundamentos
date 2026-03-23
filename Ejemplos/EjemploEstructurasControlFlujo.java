@@ -1,3 +1,4 @@
+package Ejemplos;
 class EjemploEstructurasControlFlujo {
 
     //ejemplos de estructuras de control de flujo en Java

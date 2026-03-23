@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ProyectoSistRegistroEstudiante",
+            "request": "launch",
+            "mainClass": "EjerciciosyProyectosPracticos.ProyectoSistRegistroEstudiante",
+            "projectName": "java-fundamentos_61f453b5"
+        },
+        {
+            "type": "java",
+            "name": "ProyectoBibliotecaFuncionesMate",
+            "request": "launch",
+            "mainClass": "EjerciciosyProyectosPracticos.ProyectoBibliotecaFuncionesMate",
+            "projectName": "java-fundamentos_61f453b5"
+        },
+        {
+            "type": "java",
             "name": "CalculadoraAvanzada",
             "request": "launch",
             "mainClass": "EjerciciosPracticos.CalculadoraAvanzada",
