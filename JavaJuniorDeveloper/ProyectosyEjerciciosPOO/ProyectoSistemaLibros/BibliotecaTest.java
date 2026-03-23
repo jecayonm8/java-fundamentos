@@ -7,7 +7,6 @@ public class BibliotecaTest {
         //Crear al menos 3 objetos de la clase Libro
         //Demostrar uso de todos los métodos de la clase Libro
         //Simular una operación de préstamo y devolución de un libro, mostrando el cambio en la disponibilidad del libro.
-        Scanner scanner = new Scanner(System.in);
         Libro libro1 = new Libro();
         Libro libro2 = new Libro("Poder de la mente", "JM", "123-453454345", 100.0, true);
         Libro libro3 = new Libro("El arte de la guerra", "Sun Tzu", "456-123456789", 50.0, false);

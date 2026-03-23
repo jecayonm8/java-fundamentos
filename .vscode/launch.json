@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TiendaTest",
+            "request": "launch",
+            "mainClass": "JavaJuniorDeveloper.ProyectosyEjerciciosPOO.SistemaGestionProductos.TiendaTest",
+            "projectName": "java-fundamentos_61f453b5"
+        },
+        {
+            "type": "java",
             "name": "BibliotecaTest",
             "request": "launch",
             "mainClass": "JavaJuniorDeveloper.ProyectosyEjerciciosPOO.ProyectoSistemaLibros.BibliotecaTest",
